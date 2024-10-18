@@ -151,12 +151,14 @@
         }
 
         function showBadTip() {
-            document.body.innerHTML = `
-            <div style="text-align: center; padding: 20px;">
-            <img src="Picture2.png" alt="Bad Tip" style="max-width: 500%; height: auto;" onclick="returnToMain()">
+                document.body.innerHTML = `
+        <div style="text-align: center; padding: 20px;">
+            <img src="Picture2.png" alt="Bad Tip" 
+                style="width: 100%; max-width: 720px; height: auto; display: block; margin: 0 auto; transition: transform 0.5s ease;" 
+                onclick="this.style.transform='scale(1.2)'; returnToMain()">
             <h1 class="clickable-text" onclick="returnToMain()">BAD TIP</h1>
         </div>
-          `;
+            `;
         }
 
         function returnToMain() {
