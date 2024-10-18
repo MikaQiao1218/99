@@ -94,6 +94,7 @@
             color: #0056b3;
         }
         .full-image {
+            text-align: center;
             width: 200%; /* Set a larger width for the No Tip image */
             height: auto;
             margin-bottom: 20px; /* Added margin below the image */
@@ -156,7 +157,7 @@
         function showBadTip() {
             document.body.innerHTML = `
                 <div style="text-align: center; padding: 20px;">
-                    <img src="Picture2.png" alt="Bad Tip" class="full-image" style="width: 200%; height: auto;" onclick="returnToMain()">
+                    <img src="Picture2.png" alt="Bad Tip" class="full-image" style="width: 200%; text-align: center;" onclick="returnToMain()">
                     <h1 class="clickable-text" onclick="returnToMain()">BAD TIP</h1>
                 </div>
             `;
