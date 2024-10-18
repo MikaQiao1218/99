@@ -88,8 +88,7 @@
         .clickable-text {
             cursor: pointer;
             color: #007bff;
-            text-decoration: underline;
-            font-size: 28px;
+            font-size: 35px;
         }
         .clickable-text:hover {
             color: #0056b3;
@@ -156,8 +155,8 @@
 
         function showBadTip() {
             document.body.innerHTML = `
-                <div style="text-align: center; padding: 120px;">
-                    <img src="Picture2.png" alt="Bad Tip" class="full-image" onclick="returnToMain()">
+                <div style="text-align: center; padding: 20px;">
+                    <img src="Picture2.png" alt="Bad Tip" class="full-image" style="width: 200%; height: auto;" onclick="returnToMain()">
                     <h1 class="clickable-text" onclick="returnToMain()">BAD TIP</h1>
                 </div>
             `;
